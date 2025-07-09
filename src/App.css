@@ -1,0 +1,58 @@
+.App {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+.url-text {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.MuiTableContainer-root {
+  scrollbar-width: thin;
+  scrollbar-color: #bbb #f1f1f1;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 4px;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .MuiCard-root {
+    margin-bottom: 8px;
+  }
+}
